@@ -1,0 +1,13 @@
+# SDS-SAR testing configuration
+
+model:
+  name: SDS-SAR
+  checkpoint: checkpoints/sds_sar.pth
+
+data:
+  input_dir: datasets/SDS-SAR-Demo/input
+  output_dir: datasets/SDS-SAR-Demo/output
+
+test:
+  device: cuda
+  save_format: png
