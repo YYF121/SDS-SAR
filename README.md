@@ -7,7 +7,7 @@ SDS-SAR provides a general self-supervised despeckling strategy for SAR intensit
 > The code, pretrained models, and dataset links will be progressively released.
 
 <p align="center">
-  <img src="assets/framework.png" width="90%">
+  <img src="assets/Fig2.png" width="90%">
 </p>
 
 ## News
