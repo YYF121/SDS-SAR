@@ -13,7 +13,6 @@ SDS-SAR provides a general self-supervised despeckling strategy for SAR intensit
 ## News
 
 - **2026.01**: Paper published in *ISPRS Journal of Photogrammetry and Remote Sensing*.
-- **2026.XX**: Initial repository framework released.
 
 ## Paper
 
@@ -64,7 +63,7 @@ SDS-SAR/
 git clone https://github.com/YYF121/SDS-SAR.git
 cd SDS-SAR
 
-conda create -n sds-sar python=3.9 -y
+conda create -n sds-sar python=3.7 -y
 conda activate sds-sar
 
 pip install -r requirements.txt
@@ -91,43 +90,24 @@ Recommended dataset layout:
 
 ```text
 datasets/
-├── SDS-SAR-Train/
-│   ├── Sentinel-1/
-│   ├── TerraSAR-X/
-│   ├── RADARSAT-2/
-│   └── GF-3/
-├── SDS-SAR-Test/
-│   ├── synthetic/
-│   └── real/
-└── SDS-SAR-Demo/
-    ├── input/
-    └── output/
+
 ```
 
 Please see [`datasets/README.md`](datasets/README.md) for details.
-
-## TODO
-
-- [ ] Release training code.
-- [ ] Release testing code with official network.
-- [ ] Release pretrained checkpoints.
-- [ ] Release dataset download links.
-- [ ] Add quantitative evaluation scripts.
-- [ ] Add visual examples.
 
 ## Citation
 
 If this work is useful for your research, please cite:
 
 ```bibtex
-@article{chen2026sds_sar,
-  title   = {Self-supervised despeckling based solely on SAR intensity images: A general strategy},
-  author  = {Chen, Liang and Yin, Yifei and Shi, Hao and He, Jingfei and Li, Wei},
-  journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
-  volume  = {231},
-  pages   = {854--873},
-  year    = {2026},
-  doi     = {10.1016/j.isprsjprs.2025.11.025}
+@article{chen2026self,
+  title={Self-supervised despeckling based solely on SAR intensity images: A general strategy},
+  author={Chen, Liang and Yin, Yifei and Shi, Hao and He, Jingfei and Li, Wei},
+  journal={ISPRS Journal of Photogrammetry and Remote Sensing},
+  volume={231},
+  pages={854--873},
+  year={2026},
+  publisher={Elsevier}
 }
 ```
 
@@ -141,6 +121,3 @@ For questions, please contact:
 
 This repository is built for the SDS-SAR paper. We thank the SAR image despeckling and self-supervised learning communities for their valuable research foundations.
 
-## License
-
-This project is released for academic research. Please refer to the LICENSE file for details.
