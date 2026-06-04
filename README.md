@@ -1,4 +1,4 @@
-# SDS-SAR
+# Self-supervised Despeckling Based Solely on SAR Intensity Images: A General Strategy
 
 Official repository for **Self-supervised Despeckling Based Solely on SAR Intensity Images: A General Strategy**.
 
