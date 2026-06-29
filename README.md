@@ -4,7 +4,7 @@ Official repository for **Self-supervised Despeckling Based Solely on SAR Intens
 
 SDS-SAR provides a general self-supervised despeckling strategy for SAR intensity images. It is designed to train despeckling networks using only speckled SAR intensity images, without requiring speckle-free references, multi-temporal stacks, SLC data, or additional modality assumptions.
 
-> The code, pretrained models, and dataset links will be progressively released.
+> Dataset and pretrained model links are provided below. The code will be updated progressively.
 
 <p align="center">
   <img src="assets/Fig2.png" width="90%">
@@ -34,25 +34,9 @@ DOI: [10.1016/j.isprsjprs.2025.11.025](https://doi.org/10.1016/j.isprsjprs.2025.
 ```text
 SDS-SAR/
 ├── assets/                  # Figures used in README
-│   └── framework.png         # Put the framework figure here
-├── checkpoints/              # Pretrained models, not tracked by git
-├── configs/                  # Training and testing configs
-│   └── sds_sar_test.yaml
-├── datasets/                 # Dataset links and demo data
-│   ├── README.md
-│   └── SDS-SAR-Demo/
-│       ├── input/
-│       └── output/
-├── scripts/                  # Entry scripts
-│   ├── test.py
-│   └── prepare_demo_dataset.py
-├── src/                      # Core implementation
-│   ├── models/
-│   │   └── placeholder_model.py
-│   └── utils/
-│       └── image_io.py
-├── CITATION.cff
-├── LICENSE
+├── configs/                 # Configuration files
+├── scripts/                 # Utility scripts
+├── src/                     # Source code
 ├── README.md
 └── requirements.txt
 ```
@@ -69,18 +53,12 @@ conda activate sds-sar
 pip install -r requirements.txt
 ```
 
-## Quick Test
+## Pretrained Model
 
-After placing SAR intensity images in `datasets/SDS-SAR-Demo/input/`, run:
+The SDS-SAR pretrained weight is available as `sds-sar.pth`:
 
-```bash
-python scripts/test.py \
-  --input_dir datasets/SDS-SAR-Demo/input \
-  --output_dir datasets/SDS-SAR-Demo/output \
-  --checkpoint checkpoints/sds_sar.pth
-```
-
-The current script provides a clean testing interface and a fallback placeholder filter. Replace `src/models/placeholder_model.py` with the released SDS-SAR network when the model code is ready.
+- Baidu Netdisk: [sds-sar.pth](https://pan.baidu.com/s/1SZOxAdGpFBAvmWw5OnK6tA?pwd=u754)
+- Extraction code: `u754`
 
 ## Dataset
 
@@ -88,15 +66,6 @@ The SDS-SAR despeckling dataset is available as `SDS_despeckle.rar`:
 
 - Baidu Netdisk: [SDS_despeckle.rar](https://pan.baidu.com/s/1qImK4qk4SusJ9H_cOfW_Og?pwd=2vsu)
 - Extraction code: `2vsu`
-
-Recommended dataset layout:
-
-```text
-datasets/
-
-```
-
-Please see [`datasets/README.md`](datasets/README.md) for details.
 
 ## Citation
 
