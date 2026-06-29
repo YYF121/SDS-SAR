@@ -84,7 +84,10 @@ The current script provides a clean testing interface and a fallback placeholder
 
 ## Dataset
 
-The SDS-SAR dataset will be released through one or more public links.
+The SDS-SAR despeckling dataset is available as `SDS_despeckle.rar`:
+
+- Baidu Netdisk: [SDS_despeckle.rar](https://pan.baidu.com/s/1qImK4qk4SusJ9H_cOfW_Og?pwd=2vsu)
+- Extraction code: `2vsu`
 
 Recommended dataset layout:
 
